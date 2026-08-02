@@ -339,6 +339,10 @@ strong {
 .tutor__photo {
   width: 350px;
   flex-shrink: 0;
+  /* Crop ~12% off the bottom, keeping the top anchored. */
+  aspect-ratio: 254 / 295;
+  object-fit: cover;
+  object-position: top;
 }
 
 .tutor__name {
